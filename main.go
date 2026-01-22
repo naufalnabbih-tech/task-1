@@ -131,8 +131,8 @@ func main() {
 		}
 	})
 
-	fmt.Println("Server running di localhost:8080")
-	err := http.ListenAndServe("localhost:8080", nil)
+	fmt.Println("Server running ")
+	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		fmt.Println("API tidak berjalan")
 	}
